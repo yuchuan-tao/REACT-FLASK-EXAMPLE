@@ -1,5 +1,5 @@
-import Layout from '../pages/Layout';
-import Login from '../pages/Login';
+import Layout from '@/pages/Layout'; // 'src/pages/Layout'
+import Login from '@/pages/Login';   // 'src/pages/Login'
 
 import { createBrowserRouter } from 'react-router-dom';
 

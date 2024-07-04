@@ -17,17 +17,14 @@ def getData(email):
     elif email == "virginica@gmail.com":
         arr = [x for x in arr if x[4] == "Iris-virginica"]
     transposed_array = np.transpose(arr)
-    print(email)
     return { "data": { "sepalLength": list(transposed_array[0]), "sepalWidth": list(transposed_array[1]), "petalLength": list(transposed_array[2]), "petalWidth": list(transposed_array[3])} }
 
+# Login API route
 @app.route("/login", methods=["POST"])
 @cross_origin()
 def login():
-    print(request.json)
     email = request.json.get('email')
     password = request.json.get('password')
-    print(email)
-    print(password)
     if email == "setosa@gmail.com" and password == "setosa":
         return "setosa_token"
     elif email == "virginica@gmail.com" and password == "virginica":

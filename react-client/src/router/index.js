@@ -1,5 +1,6 @@
-import Layout from '@/pages/Layout'; // 'src/pages/Layout'
-import Login from '@/pages/Login';   // 'src/pages/Login'
+import { AuthRoute } from '@/components/AuthRoute';
+import Login from '@/pages/Login';
+import Layout from '@/pages/Layout';
 
 import { createBrowserRouter } from 'react-router-dom';
 
@@ -10,7 +11,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/layout',
-    element: <Layout />
+    element: <AuthRoute><Layout /></AuthRoute>
   }
 ]);
 

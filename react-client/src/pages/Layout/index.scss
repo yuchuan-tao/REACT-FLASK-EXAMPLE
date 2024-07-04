@@ -1,23 +1,33 @@
 .layout {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 
-    .layout-button {
-      position: absolute;
-      left: 90%;
-      top: 8%;
-    }
-  
-    .layout-container {
-      width: 1280px;
-      height: 440px;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      box-shadow: 0 0 50px rgb(0 0 0 / 10%);
-    }
+  .layout-button {
+    position: absolute;
+    left: 90%;
+    top: 8%;
   }
+
+  .slider-container {
+    width: 1280px;
+    position: absolute;
+    left: 50%;
+    top: 15%; /* Adjust the top position as needed */
+    transform: translate(-50%, -50%);
+    margin-bottom: 20px;
+    z-index: 1; /* Ensure the slider is above other elements */
+  }
+
+  .layout-container {
+    width: 1280px;
+    height: 440px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 50px rgb(0 0 0 / 10%);
+  }
+}

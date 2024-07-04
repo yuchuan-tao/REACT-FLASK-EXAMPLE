@@ -23,3 +23,13 @@ python server.py
 cd react-client
 npm start
 ```
+
+### Username and Password to test the application
+```
+setosa@gmail.com
+setosa
+```
+```
+virginica@gmail.com
+virginica
+```

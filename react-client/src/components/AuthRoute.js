@@ -1,11 +1,11 @@
-import { getToken } from '@/utils/token'
-import { Navigate } from 'react-router-dom'
+import { getToken } from '@/utils/token';
+import { Navigate } from 'react-router-dom';
 
 export function AuthRoute ({ children }) {
-  const token = getToken()
+  const token = getToken();
   if (token) {
-    return <>{children}</>
+    return <>{children}</>;
   } else {
-    return <Navigate to={'/'} replace />
+    return <Navigate to={'/'} replace />;
   }
 }

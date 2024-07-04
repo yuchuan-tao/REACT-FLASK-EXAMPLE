@@ -1,7 +1,7 @@
 import './index.scss';
 import axios from 'axios';
 import { Card, Form, Input, Button } from 'antd';
-import { getToken, setToken } from '@/utils/token';
+import { setToken } from '@/utils/token';
 import { useNavigate } from 'react-router-dom'
 import { setEmail } from '@/utils/user';
 

@@ -1,10 +1,21 @@
 import './index.scss';
+import axios from 'axios';
 import { Card, Form, Input, Button } from 'antd';
+import { getToken, setToken } from '@/utils/token';
+import { useNavigate } from 'react-router-dom'
+import { setEmail } from '@/utils/user';
 
 const Login = () => {
+  const navigate = useNavigate();
   const onFinish = async (values) => {
-    console.log(values)
+    const response = await axios.post('http://localhost:5000/login', values);
+    if (response.data) {
+      setToken(response.data);
+      setEmail(values.email);
+      navigate('/layout');
+    }
   };
+
   return (
     <div className="login">
       <Card className="login-container">

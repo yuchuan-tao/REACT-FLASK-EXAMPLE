@@ -4,6 +4,12 @@
     position: absolute;
     left: 0;
     top: 0;
+
+    .layout-button {
+      position: absolute;
+      left: 90%;
+      top: 8%;
+    }
   
     .layout-container {
       width: 1280px;
